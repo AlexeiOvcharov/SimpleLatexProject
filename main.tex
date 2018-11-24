@@ -1,0 +1,39 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+
+% Bibliography
+\usepackage[backend=biber]{biblatex}
+\bibliography{bib/test}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{images}}
+
+% Simple text
+\usepackage{blindtext}
+
+\begin{document}
+
+    \begin{center}
+        \Large\textbf{Простой проект}
+    \end{center}
+
+
+    \blindtext\cite{ahu61} \par
+
+    \begin{figure} [h!]
+        \centering
+        \includegraphics[height=3cm]{example-image-a}
+        \label{fig:example}
+        \caption{Описание}
+    \end{figure}
+
+    \blindtext\cite{ab94} 
+
+    \printbibliography
+     
+\end{document}
